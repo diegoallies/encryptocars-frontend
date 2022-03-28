@@ -1,6 +1,6 @@
 import axios from 'axios';
 import authHeader from './auth-header';
-const API_URL = 'https://encryptogram-backend.herokuapp.com/users/';
+const API_URL = 'https://encryptocars-backend.herokuapp.com//users/';
 class UserService {
   getPublicContent() {
     return axios.get(API_URL + 'all');

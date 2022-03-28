@@ -69,7 +69,7 @@ data(){
     }
 },
 mounted() {
-    fetch("https://encryptogram-backend.herokuapp.com/posts/" + this.id)
+    fetch("https://encryptocars-backend.herokuapp.com/posts/" + this.id)
       .then((res) => res.json())
       .then((data) => {
         this.post = data;
@@ -86,7 +86,7 @@ computed: {
 
   methods: {
     deletePost(id){
-    fetch("https://encryptogram-backend.herokuapp.com/posts/" + id, {
+    fetch("https://encryptocars-backend.herokuapp.com/posts/" + id, {
         method: "DELETE",
         headers: {
           "Content-type": "application/json; charset=UTF-8",
@@ -99,7 +99,7 @@ computed: {
     },
 
     editPost(id){
-    fetch("https://encryptogram-backend.herokuapp.com/posts/" + id, {
+    fetch("https://encryptocars-backend.herokuapp.com/posts/" + id, {
         method: "PATCH",
         body: JSON.stringify({
 

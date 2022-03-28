@@ -63,7 +63,7 @@
 export default {
   methods: {
      deleteUser(id){
-    fetch("https://encryptogram-backend.herokuapp.com/users/" + id, {
+    fetch("https://encryptocars-backend.herokuapp.com/users/" + id, {
         method: "DELETE",
         headers: {
           "Content-type": "application/json; charset=UTF-8",
@@ -77,7 +77,7 @@ export default {
         this.$router.push('/login');
     },
     editUser(id){
-    fetch("https://encryptogram-backend.herokuapp.com/users/" + id, {
+    fetch("https://encryptocars-backend.herokuapp.com/users/" + id, {
         method: "PATCH",
         body: JSON.stringify({
 
@@ -106,7 +106,7 @@ export default {
       this.$router.push('/login');
     }
 
-    fetch("https://encryptogram-backend.herokuapp.com/users/")
+    fetch("https://encryptocars-backend.herokuapp.com/users/")
       .then((res) => res.json())
       .then((data) => {
         this.users = data;

@@ -1,4 +1,4 @@
-# encryptoGramFrontEnd
+# encryptocars
 
 ## Project setup
 ```

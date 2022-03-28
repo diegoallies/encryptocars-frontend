@@ -40,7 +40,7 @@
 export default {
   methods: {
      deleteUser(id){
-    fetch("https://encryptogram-backend.herokuapp.com/users/" + id, {
+    fetch("https://encryptocars-backend.herokuapp.com/users/" + id, {
         method: "DELETE",
         headers: {
           "Content-type": "application/json; charset=UTF-8",

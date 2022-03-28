@@ -297,7 +297,7 @@ import PostItem from "./PostItem.vue"
 export default {
   methods: {
     addPost(){
-    fetch("https://encryptogram-backend.herokuapp.com/posts/", {
+    fetch("https://encryptocars-backend.herokuapp.com/posts/", {
         method: "POST",
         body: JSON.stringify({
 
@@ -315,7 +315,7 @@ export default {
       })
         .then((response) => response.json())
         .then((json) => {console.log(json)
-        fetch("https://encryptogram-backend.herokuapp.com/posts/")
+        fetch("https://encryptocars-backend.herokuapp.com/posts/")
       .then((res) => res.json())
       .then((data) => {
         this.posts = data.reverse();
@@ -336,7 +336,7 @@ export default {
     };
   },
   mounted() {
-    fetch("https://encryptogram-backend.herokuapp.com/posts/")
+    fetch("https://encryptocars-backend.herokuapp.com/posts/")
       .then((res) => res.json())
       .then((data) => {
         this.posts = data.reverse();

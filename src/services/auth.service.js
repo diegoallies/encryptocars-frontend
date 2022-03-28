@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = 'https://encryptogram-backend.herokuapp.com/users';
+const API_URL = 'https://encryptocars-backend.herokuapp.com/users';
 class AuthService {
   login(user) {
     return axios
