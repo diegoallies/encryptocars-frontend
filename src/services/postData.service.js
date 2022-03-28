@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = "https://encryptogram-backend.herokuapp.com/post/";
+const API_URL = "https://encryptocars-backend.herokuapp.com//post/";
 class postDataService {
   getAll() {
     return API_URL.get("/post");
