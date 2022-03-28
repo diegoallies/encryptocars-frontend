@@ -6,21 +6,36 @@
 
 <div class="container-lg bhbh kkk"> 
   <div class="row kkk">
-    <div class="col-9 kkk">
+    <div class="col-3 kkk">
       <h2 class="hed kkk">{{ post.fullname }}</h2>
-       <h5 class="txt kkk">{{ post.postText }}</h5>
+       <h5 class="txt kkk">{{ post.title }}</h5>
     </div>
+    <div class="col-6 kkk">
+
+      <h5 class="kkk">
+        {{ post.category }}
+      </h5>
+
+       <h5 class="kkk">
+         R {{ post.price }}
+        </h5>
+
+       <h5 class="kkk">
+        {{ post.description }}
+      </h5>
+
+      </div>
     <div class="col kkk">
     <br>
         <router-link class="delet" to="/user">
          <button v-if="currentUser._id == post.created_by" @click="deletePost(post._id)" class="btn glow-on-hover buttton kkm">
-            Delete Post
+            Delete Product
           </button>
         </router-link>
 
          <br>
          <button v-if="currentUser._id == post.created_by" type="button" class="btn glow-on-hover buttton" data-toggle="modal" data-target="#exampleModalCenter">
-         Edit Post
+         Edit Product
         </button>
     </div>
   </div>
@@ -37,13 +52,18 @@
     <div class="bg-dark bloc aqua-border">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle"> Edit Post </h5>
+        <h5 class="modal-title" id="exampleModalLongTitle"> Edit Product </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-       <input type="text" id="inputt" :placeholder="post.postText" class="btn-block" v-model="postText"> 
+       <input type="text" id="inputt" :placeholder="post.title" class="btn-block" v-model="title"> 
+       <input type="number" id="inputt" :placeholder="post.price" class="btn-block" v-model="price"> 
+       <input type="text" id="inputt" :placeholder="post.category" class="btn-block" v-model="category"> 
+       <input type="text" id="inputt" :placeholder="post.description" class="btn-block" v-model="description"> 
+       <input type="text" id="inputt" :placeholder="post.img" class="btn-block" v-model="img"> 
+
       </div>
       <div class="modal-footer">
       
@@ -103,7 +123,11 @@ computed: {
         method: "PATCH",
         body: JSON.stringify({
 
-        postText: this.postText,
+        title: this.title,
+        price: this.price,
+        category: this.category,
+        description: this.description,
+        img: this.img,
           
         }),
         headers: {

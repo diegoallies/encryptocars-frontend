@@ -1,8 +1,22 @@
 <template>
     <div class="bg-dark bloc aqua-border">
-        <h2 class="hed bg-dark">{{ post.fullname }}</h2>
-        <h5 class="txt bg-dark">{{ post.postText }}</h5>
+
+      <div class="row bhd">
+    <div class="col bhd">
+      <h2 class="hed bg-dark bhd">{{ post.fullname }}</h2> <br>
+        <h5 class="txt bg-dark bhd">{{ post.title }}</h5>
         <br>
+    </div>
+    <div class="col bhd">
+     <h2 class="bhd">R {{ post.price }}
+       </h2> 
+       <br>
+       <h6 class="bhd">
+         category: {{ post.category }}
+       </h6>
+    </div>
+    </div>
+        
 
         <router-link :to="{name:'SinglePost', params: {id: post._id}}">
         <div class="p-image"><img :src="post.img" alt="Open image to alter content"/></div>
@@ -45,6 +59,11 @@ export default {
   width: 100%;
 }
 
+.bhd {
+  background: rgb(35, 63, 63) !important;
+  margin: 0%;
+  overflow: hidden;
+}
 .hed, .txt {
   margin-left: 2%;
   margin-top: -1%;

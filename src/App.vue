@@ -58,7 +58,7 @@
         </li>
 
         <li class="nav-item">
-          <router-link v-if="currentUser" to="/user" class="nav-link nbtn background-for-text left-top-hover">Feed</router-link>
+          <router-link v-if="currentUser" to="/user" class="nav-link nbtn background-for-text left-top-hover">Products</router-link>
         </li>
       </div>
    

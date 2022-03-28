@@ -40,9 +40,9 @@
         </button>
       </div>
       <div class="modal-body background-for-text">
-        <h2 class="cnp background-for-text">Create new post</h2>
+        <h2 class="cnp background-for-text">Add new Product</h2>
         <div class="form-group haniah">
-           <input name="postText" type="text" class="form-control" v-model="postText" placeholder="Whats on your mind"/>
+           <input name="postText" type="text" class="form-control" v-model="postText" placeholder="title"/>
         </div>
 
         <div class="form-group">
@@ -82,14 +82,28 @@
           <h1 class="background-for-text">Hello {{ currentUser.fullname }} 👋</h1>
         </div>
         
-        <h2 class="cnp background-for-text">Create new post</h2>
+        <h2 class="cnp background-for-text">Add new Product</h2>
+
         <div class="form-group haniah">
-           <input name="postText" type="text" class="form-control" v-model="postText" placeholder="Whats on your mind"/>
+           <input name="title" type="text" class="form-control" v-model="title" placeholder="title"/>
         </div>
 
         <div class="form-group">
           <input name="img" type="text" class="form-control" v-model="img" placeholder="Paste image URL" />
         </div>
+
+        <div class="form-group">
+          <input name="category" type="text" class="form-control" v-model="category" placeholder="category" />
+        </div>
+
+        <div class="form-group">
+          <input name="description" type="text" class="form-control" v-model="description" placeholder="description" />
+        </div>
+
+        <div class="form-group">
+          <input name="price" type="number" class="form-control" v-model="price" placeholder="price" />
+        </div>
+
         <div class="form-group background-for-text">
           <button class="btn glow-on-hover btn-block" :disabled="loading" type="submit">
             <span
@@ -103,10 +117,6 @@
   </form>
 <!-- small bloxk at bottom right corner -->
 
-       <div class="smallBlock aqua-border">
-   <h1 class="eg"> EncryptoGram</h1>
-        
-       </div>
  
     </div>
 
@@ -145,7 +155,7 @@
   position: fixed;
   margin-top: 5.3%;
   margin-left: -2.5%;
-  height: 60%;
+  height: 88.5%;
   width: 37%;
   padding: 2%;
   background: rgb(35, 63, 63);
@@ -302,10 +312,11 @@ export default {
         body: JSON.stringify({
 
         img: this.img,
-        postText: this.postText,
+        title: this.title,
         fullname: this.currentUser.fullname,
-        
-        atn: this.currentUser.accessToken
+        category: this.category,
+        description: this.description,
+        price: this.price,
           
         }),
         headers: {
