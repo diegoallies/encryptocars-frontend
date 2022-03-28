@@ -1,6 +1,6 @@
 <template>
 
-<h1 class="feed">feed</h1>
+<h1 class="feed">Products</h1>
 
 <div class="body">
 
@@ -66,7 +66,7 @@
 </div>
 <!-- end of mobile view modal -->
 <div class="eofLine">
-  <h1 class="eof">End of feed</h1>
+  <h1 class="eof">End of Products</h1>
 </div>
 
 <div class="stk"></div>

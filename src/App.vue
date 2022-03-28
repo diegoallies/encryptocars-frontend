@@ -8,7 +8,7 @@
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="#home" class="active">Encryptogram</a>
+  <a href="#home" class="active">Encryptocars</a>
   <div id="myLinks">
 
           <router-link @click="myFunction()" v-if="!currentUser" to="/register" class="nav-link nbtn background-for-text right-top-hover">
@@ -24,7 +24,7 @@
              <font-awesome-icon icon="home" class="nbtn background-for-text ic"/>
              Home
           </router-link>
-    <router-link @click="myFunction()" v-if="currentUser" to="/user" class="nav-link nbtn background-for-text left-top-hover">Feed</router-link>
+    <router-link @click="myFunction()" v-if="currentUser" to="/user" class="nav-link nbtn background-for-text left-top-hover">Products</router-link>
 
      <router-link @click="myFunction()" to="/contact" class="nav-link nbtn background-for-text right-top-hover">
            Contact
