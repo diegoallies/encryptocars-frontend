@@ -10,9 +10,9 @@
 
      <p>
          
-        Encryptogram is a fast growing social media platform , made for developers to intereract with. Our main goal is to build a fully secure social media platform where developers can share code and help with casual error codes. A texting system is still underway . Stay tuned !
+        encryptocars is a fast growing social media platform , made for developers to intereract with. Our main goal is to build a fully secure social media platform where developers can share code and help with casual error codes. A texting system is still underway . Stay tuned !
             <br> <br>
-        EncryptoGram is designed, written, implimented and managed by Diego Allies.
+        encryptocars is designed, written, implimented and managed by Diego Allies.
 
      </p>
 

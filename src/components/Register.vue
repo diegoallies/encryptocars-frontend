@@ -2,7 +2,7 @@
   <div class="col-md-12 mn aqua-border">
     <div class="card card-container bg-dark">
 
-      <div class="spacer frm bg-dark"> <h1 class="pd">Welcome to EncryptoGram</h1>
+      <div class="spacer frm bg-dark"> <h1 class="pd">Welcome to encryptocars</h1>
         </div>
       <!-- <img
         id="profile-img"
