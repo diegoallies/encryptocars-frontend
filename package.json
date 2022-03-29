@@ -15,6 +15,7 @@
     "bootstrap": "^4.6.1",
     "bootstrap-icons": "^1.8.1",
     "core-js": "^3.6.5",
+    "firebase": "^9.6.10",
     "gulp": "^4.0.2",
     "particlesjs": "^2.2.3",
     "popper.js": "^1.16.1",
